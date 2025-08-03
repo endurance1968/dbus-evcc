@@ -130,8 +130,12 @@ class DbusEvccChargerService:
         try:
             # get data from go-eCharger
             data = self._getEvccChargerData()
-            result = data["result"]
-            loadpoint = result["loadpoints"][0]
+            # Pre EVCC 0.207.0
+               #result = data["result"]
+               #loadpoint = result["loadpoints"][0]
+            # higher than EVCC 0.207.0
+            # the result wrapper was removed
+            loadpoint = data["loadpoints"][0]
 
             # send data to DBus
 
