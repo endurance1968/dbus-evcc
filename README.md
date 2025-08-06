@@ -33,7 +33,7 @@ Within the project there is a file `/data/dbus-evcc/config.ini` - just change th
 ## If you have two load points in EVCC
 1. Follow the installation instructions above, but change the commands as follows:
    ```
-   wget https://github.com/SamuelBrucksch/dbus-evcc/archive/refs/heads/main.zip
+   wget https://github.com/endurance1968/dbus-evcc/archive/refs/heads/main.zip
    unzip main.zip "dbus-evcc-main/*" -d /data
    mv /data/dbus-evcc-main /data/dbus-evcc-1
    chmod a+x /data/dbus-evcc-1/install.sh
